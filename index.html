@@ -1,0 +1,475 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quiz"><h1>QUIZ</h1></div>
+    <div class="fg">
+    
+    <div class="instructions">
+        <h5>instructions:</h5>
+        <p>-Ce test contient 30 questions en HTML, CSS et JavaScript,pour chaque question cochez la bonne réponse.</p>
+        <p>-Pour valider le test, il faut répondre au moins à sept questions pour chaque catégories, sinon la note ne sera pas calculer (le score sur 30 points)</p>
+        <p>-Si vous affichez la solution,votre réponse sera compter comme fausse</p>
+    </div>
+    <div>
+        <input type="button"  name="t1" id="html" value="HTML" onclick="toggleHTML()">
+        <div id="QuestHTML">
+            <div class="Ques1">
+                <h5>Question n°1:</h5>
+                <p>le role du HTML est de ...</p>
+                <input type="radio" name="radio1" id="correct1">
+                <label for="">1-Mettre en forme du texte</label>
+                <br>
+                <input type="radio" name="radio1" id="">
+                <label for="">2-Ordonner du contenu</label>
+                <br>
+                <input type="radio" name="radio1" id="">
+                <label for="">3-Créer des sites e-commerce</label>
+                <br> <button id ="btn1" onclick="reponse1()">voir la réponse</button>
+                <p id="answer1" style="color: red;" ></p>
+            </div>
+            <div class="Ques2">
+                <h5>Question n°2:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio2" id="">
+                <label for="radio">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio2" id="correct2">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio2" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id ="btn2" onclick="reponse2()">voir la réponse</button>
+                <p id="answer2" style="color: red;" ></p>
+            </div>
+            <div class="Ques3">
+                <h5>Question n°3:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio3" id="correct3">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio3" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio3" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn3" onclick="reponse3()">voir la réponse</button>
+                <p id="answer3" style="color: red;" ></p>
+            </div>
+            <div class="Ques4">
+                <h5>Question n°4:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio4" id="correct4">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio4" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio4" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn4" onclick="reponse4()">voir la réponse</button>
+                <p id="answer4" style="color: red;" ></p>
+            </div>
+            <div class="Ques5">
+                <h5>Question n°5:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio5" id="correct5">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn5" onclick="reponse5()">voir la réponse</button>
+                <p id="answer5" style="color: red;" ></p>
+            </div>
+            <div class="Ques6">
+                <h5>Question n°6:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio6" id="correct6">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn6" onclick="reponse6()">voir la réponse</button>
+                <p id="answer6" style="color: red;" ></p>
+            </div>
+            <div class="Ques7">
+                <h5>Question n°7:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio7" id="correct7">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn7" onclick="reponse7()">voir la réponse</button>
+                <p id="answer7" style="color: red;" ></p>
+            </div>
+            <div class="Ques8">
+                <h5>Question n°8:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio8" id="correct8">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn8" onclick="reponse8()">voir la réponse</button>
+                <p id="answer8" style="color: red;" ></p>
+            </div>
+            <div class="Ques9">
+                <h5>Question n°9:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio9" id="correct9">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn9" onclick="reponse9()">voir la réponse</button>
+                <p id="answer9" style="color: red;" ></p>
+            </div>
+            <div class="Ques10">
+                <h5>Question n°10:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio10" id="correct10">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn10" onclick="reponse10()">voir la réponse</button>
+                <p id="answer10" style="color: red;" ></p>
+            </div>
+    </div>
+    <!-- fin de la partie html -->
+    <br>
+    <br>
+    <!-- partie css -->
+    <div>
+
+        <input type="button" name="t2" id="css" value="CSS" onclick="toggleCSS()">
+        <div id="QuestCSS">
+            <div class="Ques1">
+                <h5>Question n°1:</h5>
+                <p>le role du HTML est de ...</p>
+                <input type="radio" name="radio1c" id="correct1c">
+                <label for="">1-Mettre en forme du texte</label>
+                <br>
+                <input type="radio" name="radio1c" id="">
+                <label for="">2-Ordonner du contenu</label>
+                <br>
+                <input type="radio" name="radio1c" id="">
+                <label for="">3-Créer des sites e-commerce</label>
+                <br> <button id ="btn1c" onclick="reponse1c()">voir la réponse</button>
+                <p id="answer1c" style="color: red;" ></p>
+            </div>
+            <div class="Ques2">
+                <h5>Question n°2:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio2c" id="">
+                <label for="radio">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio2c" id="correct2c">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio2c" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id ="btn2c" onclick="reponse2c()">voir la réponse</button>
+                <p id="answer2c" style="color: red;" ></p>
+            </div>
+            <div class="Ques3">
+                <h5>Question n°3:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio3c" id="correct3c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio3c" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio3c" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn3c" onclick="reponse3c()">voir la réponse</button>
+                <p id="answer3c" style="color: red;" ></p>
+            </div>
+            <div class="Ques4">
+                <h5>Question n°4:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio4c" id="correct4c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio4" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio4c" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn4c" onclick="reponse4c()">voir la réponse</button>
+                <p id="answer4c" style="color: red;" ></p>
+            </div>
+            <div class="Ques5">
+                <h5>Question n°5:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio5c" id="correct5c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn5c" onclick="reponse5()">voir la réponse</button>
+                <p id="answer5c" style="color: red;" ></p>
+            </div>
+            <div class="Ques6">
+                <h5>Question n°6:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio6c" id="correct6c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn6c" onclick="reponse6c()">voir la réponse</button>
+                <p id="answer6c" style="color: red;" ></p>
+            </div>
+            <div class="Ques7">
+                <h5>Question n°7:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio7c" id="correct7c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn7c" onclick="reponse7c()">voir la réponse</button>
+                <p id="answer7" style="color: red;" ></p>
+            </div>
+            <div class="Ques8">
+                <h5>Question n°8:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio8c" id="correct8c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn8c" onclick="reponse8c()">voir la réponse</button>
+                <p id="answer8" style="color: red;" ></p>
+            </div>
+            <div class="Ques9">
+                <h5>Question n°9:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio9c" id="correct9c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn9c" onclick="reponse9c()">voir la réponse</button>
+                <p id="answer9c" style="color: red;" ></p>
+            </div>
+            <div class="Ques10">
+                <h5>Question n°10:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio10c" id="correct10c">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn10c" onclick="reponse10c()">voir la réponse</button>
+                <p id="answer10c" style="color: red;" ></p>
+            </div>
+    </div>
+    <!-- fin de la partie css  -->
+    <br>
+    <br>
+    <!-- debut partie php  -->
+    <div>
+        <input type="button"  name="t3" id="php" value="PHP" onclick="togglePHP()">
+        <div id="QuestPHP">
+            <div class="Ques1">
+                <h5>Question n°1:</h5>
+                <p>le role du HTML est de ...</p>
+                <input type="radio" name="radio1p" id="correct1p">
+                <label for="">1-Mettre en forme du texte</label>
+                <br>
+                <input type="radio" name="radio1p" id="">
+                <label for="">2-Ordonner du contenu</label>
+                <br>
+                <input type="radio" name="radio1" id="">
+                <label for="">3-Créer des sites e-commerce</label>
+                <br> <button id ="btn1p" onclick="reponse1p()">voir la réponse</button>
+                <p id="answer1p" style="color: red;" ></p>
+            </div>
+            <div class="Ques2">
+                <h5>Question n°2:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio2" id="">
+                <label for="radio">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio2p" id="correct2p">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio2" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id ="btn2p" onclick="reponse2p()">voir la réponse</button>
+                <p id="answer2p" style="color: red;" ></p>
+            </div>
+            <div class="Ques3">
+                <h5>Question n°3:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio3p" id="correct3p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio3" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio3" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn3p" onclick="reponse3p()">voir la réponse</button>
+                <p id="answer3p" style="color: red;" ></p>
+            </div>
+            <div class="Ques4">
+                <h5>Question n°4:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio4p" id="correct4p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio4" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio4" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn4p" onclick="reponse4p()">voir la réponse</button>
+                <p id="answer4p" style="color: red;" ></p>
+            </div>
+            <div class="Ques5">
+                <h5>Question n°5:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio5p" id="correct5p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio5" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn5p" onclick="reponse5p()">voir la réponse</button>
+                <p id="answer5p" style="color: red;" ></p>
+            </div>
+            <div class="Ques6">
+                <h5>Question n°6:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio6p" id="correct6p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio6" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn6p" onclick="reponse6p()">voir la réponse</button>
+                <p id="answer6p" style="color: red;" ></p>
+            </div>
+            <div class="Ques7">
+                <h5>Question n°7:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio7p" id="correct7p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio7" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn7p" onclick="reponse7p()">voir la réponse</button>
+                <p id="answer7p" style="color: red;" ></p>
+            </div>
+            <div class="Ques8">
+                <h5>Question n°8:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio8p" id="correct8p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio8" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn8p" onclick="reponse8p()">voir la réponse</button>
+                <p id="answer8p" style="color: red;" ></p>
+            </div>
+            <div class="Ques9">
+                <h5>Question n°9:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio9p" id="correct9p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio9" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn9p" onclick="reponse9p()">voir la réponse</button>
+                <p id="answer9p" style="color: red;" ></p>
+            </div>
+            <div class="Ques10">
+                <h5>Question n°10:</h5>
+                <p>Pour définir un titre dans une page HTML,on utilise ...</p>
+                <input type="radio" name="radio10p" id="correct10p">
+                <label for="">1-L'element title</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">2-L'élément head</label>
+                <br>
+                <input type="radio" name="radio10" id="">
+                <label for="">3-Un élément h1,h2,....h-</label>
+                <br> <button id="btn10p" onclick="reponse10p()">voir la réponse</button>
+                <p id="answer10p" style="color: red;" ></p>
+            </div>
+    </div>
+    <!-- fin de la partie html -->
+    <br>
+    <br>
+    <div>
+        <div><input type="button" name="" id="valider" onclick="score()"  value="Valider" ></div>
+    </div>
+</div>  
+        
+            
+
+    
+
+    
+<script src="script.js"></script>
+</body>
+</html>
